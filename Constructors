@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    public:
+    string name;
+    int age;
+    int roll_No;
+
+    /******************************************** 
+    // Default Constructor : no parameters
+    Student()
+    {
+        cout<<"Default constructor called"<<endl;
+    }
+************************************/
+
+
+     //Constructor overloading : multiple constructors with different parameters
+    // Parameterizes Constructor : with parameters
+    Student(int a){
+        age = a;
+        cout<<age<<endl;
+    }
+
+    Student(int a,string b, int c){
+        age = a;
+        name = b;
+        roll_No = c;
+        cout<<age<<" "<<name<<" "<<roll_No<<endl;
+    }
+
+
+};
+
+int main(){
+    Student obj(10,"Muskan",101);
+    
+}
