@@ -1,0 +1,37 @@
+                                                     #Polymorphishm
+                                                   ->Function Overloading
+#include<iostream>
+using namespace std;
+
+//Polymorphism : ability of an object to take many forms
+
+class Student{
+    public:
+    int length;
+    int breadth;
+
+//function overloading : same function name with different parameters
+    public:
+    int area(int l,int r){
+        return l*r;
+    }
+
+    int area(int r){
+        return r*r;
+    }
+
+    void display(){
+       
+    }
+
+};
+
+int main(){
+    Student obj;
+    cout<<"Area of rectangle : "<<obj.area(10,5)<<endl;
+    cout<<"Area of square : "<<obj.area(5)<<endl;
+    return 0;
+}
+
+
+
