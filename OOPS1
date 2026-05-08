@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+//Encapsulation : binding data members and member functions together in a single unit called class
+//abstraction : hiding internal details and showing only functionality to the user
+class Student{
+    private:
+    string name;
+    int age;
+    int roll_No;
+
+    public:
+    void setter(string n,int a, int r)
+    {
+        name = n;
+        age = a;
+        roll_No = r;
+    }
+
+    int getter(){
+        return age;
+    }
+
+};
+
+int main(){
+    Student obj;
+    obj.setter("Muskan",20,101);
+    cout<<obj.getter();
+}
